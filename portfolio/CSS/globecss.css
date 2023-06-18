@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/probg2.jpg");
+    background-size: cover;
+  }
+  
+  .content {
+    animation: slideIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: transparent; /* Set the background color to transparent */
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    font-family: 'Montserrat', sans-serif;;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .content {
+    height: 100vh; /* Set the height to occupy the full viewport height */
+    padding-bottom: 50px; /* Provide space for the footer */
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height as per your requirement */
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: black;
+  }
+  
+  a {
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li::before {
+    content: "->";
+    margin-right: 5px;
+  }
+  
+  
+  
